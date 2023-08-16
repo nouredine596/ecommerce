@@ -1,0 +1,490 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,300;0,900;1,100;1,400&display=swap');
+
+*{
+    font-family: 'Poppins', sans-serif;
+    box-sizing: border-box;
+    margin: 0px;
+    padding: 0px;
+    color: var(--color1);
+    text-decoration: none;
+}
+:root{
+    --color1 :rgba(255, 255, 255, 0.831);
+    --color11 : white;
+
+    --color2 : rgb(29, 28, 28);
+    --color22 :rgb(26, 25, 25);
+
+    --color3 :#00a400;
+    --color33 :#00a400a3;
+
+  
+
+    --borderR : 3em;
+}
+body{
+    background-color: rgb(43, 40, 40);
+}
+.container{
+    width: 85%;
+    margin: auto;
+}
+
+/* ######################################################## strt header */
+header{
+    background-color: var(--color2);
+    height: 80px;
+    width: 100%;
+    display: flex;
+    position: fixed;
+    z-index: 99;
+    justify-content: space-around;
+    border-bottom-left-radius: var(--borderR);
+    border-bottom-right-radius: var(--borderR);
+    border-bottom: 3px solid var(--color3);
+    align-items: center;
+}
+.logo{
+    color: var(--color1);
+    font-weight: 700;
+    font-size: 1.5em;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+  
+}
+span{
+    color: var(--color33);
+    font-size: 1.5em;
+    margin-right: 0.1em;
+}
+.navigation a{
+    color: var(--color1);
+    font-size: 1.3em;
+    margin-left: 1em;
+    padding: 0.4em;
+    border-bottom: 1px solid var(--color33);
+}
+.navigation a:hover{
+    background-color: var(--color3);
+    color: var(--color2);
+    border-radius: 10px;
+    border: none;
+}
+/* ###################################### end header */
+
+
+
+/* ######################################################## strt main */
+
+.main{
+    padding-top: 8em;
+    height: 100vh;
+    background-color: var(--color2);
+    border: none;
+    display: flex;
+    justify-content: space-around;
+
+}
+.main .info{
+    margin-left: 8em;
+    width: 40%;
+}
+.info h2{
+    color: var(--color1);
+    margin-bottom: 1em;
+}
+.info p{
+    color: var(--color1);
+    margin-top: 1em;
+    margin-bottom: 6em;
+}
+.btn-main{
+    background-color: var(--color3);
+    font-weight: 700;
+    letter-spacing: 1px;
+    padding: 0.7em 1.4em;
+    border-top-left-radius: 1em;
+    border-bottom-right-radius: 1em;
+    transition: 2s ease;
+    cursor: pointer;
+    
+}
+.btn-main:hover{
+    background-color: var(--color33);
+    transform: scale(1.1); 
+}
+.soial-icons{
+    margin-top: 4em; 
+}
+
+.soial-icons a{
+    margin-right: 2em;
+   
+}
+.soial-icons i{
+    color: var(--color3);
+    font-size: 1.5em;
+    
+} 
+.soial-icons i:hover{
+    color: var(--color11);
+    transform: scale(1.1) rotate(1deg);
+} 
+
+.main .images{
+    width: 400px;
+  
+}
+.main img{
+    width: 100%;
+    max-height: 400px;
+    border-radius: 0.5em;}
+.imageschange{
+    display: flex;
+    justify-content: space-around;
+    margin-top: 0.5em;
+}
+.imageschange img{
+    width: 50px;
+    max-height: 50px;
+    border-radius: 1em;
+    cursor: pointer;
+}
+
+/* ###################################### end main */
+
+
+/* ################## section*/
+section{
+    margin-bottom: 5em;
+    padding: 1em;
+    border-radius: 1em;
+    border: 1px solid var(--color1);
+}
+/* ################## section*/
+
+
+
+/* ######################################################## strt services */
+.services{
+    background-color: var(--color22);
+}
+
+.title{
+    text-align: center;
+    font-weight: 800;
+    font-size: 2em;
+    width: fit-content;
+    border-bottom: 1px solid var(--color3);
+    margin: 1em auto 1.5em auto;
+    padding: 0.2em;
+    cursor: pointer;
+}
+.title:hover{
+    color: var(--color11);
+    letter-spacing: 1px;
+}
+
+.content{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    flex-direction: row;
+   
+}
+.card{
+    width: 20em;
+
+    text-align: center;
+    box-shadow:0  10px 10px  1px var(--color1);
+    margin-right: 2.4em;
+    padding: 0.5em;
+    margin-bottom: 3em;
+    border-radius: 0.5em;
+    border-top-left-radius: 1.7em;
+    border-bottom: 3px solid var(--color3);
+    transition: 1s ease;
+    cursor: pointer;
+}
+.card:hover{
+    transform: scale(1.1);
+}
+
+.card i{
+    font-size: 6em;
+    color: var(--color1);
+    margin-bottom: 0.2em;
+}
+.card .info h3{
+    color: var(--color3);
+}
+.card .info p {
+    margin: 1em 0em;
+}
+.card:hover i{
+    color: var(--color11);
+}
+
+/* ###################################### end service */
+
+/* ######################################################## strt meuble */
+#meubles{
+    width: 70%;
+    height: 100%;
+    margin: auto;
+    padding: 0.3em;
+    background-color: var(--color3);
+    border-radius: 2em;
+}
+#meubles img{
+    width: 100%;
+    height: 100%;
+    max-height: 500px;
+    border-radius: 2em;
+
+}
+/* ###################################### end meuble */
+.projects{
+    background-color: var(--color22);
+}
+.card-project{
+    min-height: 12em;
+    max-width: 20em;
+    margin:2em 1.5em 1.5em 0em;
+    border: 1px solid var(--color1);
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    transition: 1s ease;
+    cursor: pointer;
+}
+
+.card-project-details{
+    min-height: 30em;
+    max-width: 40em;
+
+}
+.card-project:hover{
+    transform: scale(1.1) rotate(1deg);
+    opacity: 0.8;
+}
+.image-project{
+    width: 100%;
+}
+.image-project img{
+    width: 100%;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+.info-project{
+    padding: 0.8em;
+}
+.info-project p{
+    font-size: 0.8em;
+}
+.info-project strong{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0.5em 0em;
+    
+    
+}
+.info-project strong a{
+    transition: 2s;
+}
+.info-project strong a:hover{
+    color: var(--color11);
+    transform: scale(1.1);
+    
+}
+/* ###################################### end projects */
+.contacts{
+    background-color: var(--color22);
+}
+
+/* ######################################################## strt form */
+
+form{
+    background-color: var(--color22);
+    width: 80%;
+    padding: 1em;
+    display: flex;
+    gap: 12px;
+    flex-wrap: wrap;
+    border-radius: 1em 0.5em;
+}
+
+
+form input{
+    background-color:var(--color2);
+    color: white;
+    height: 2em;
+    border-radius: 1em;
+    padding: 0.5em;
+    outline: none;
+    border: none;
+    transition: 0.7s;
+    flex-grow: 1;
+   margin-top: 1em;
+}
+form input:focus{
+    transform: scale(1.03);
+}
+
+
+form button{
+    min-width: 200px;
+    background-color: var(--color3);
+    color: white;
+    border-radius: 0.5em;
+    outline: none;
+    border: none;
+    border-radius: 1em;
+    cursor: pointer;
+    flex-grow: 1;
+    margin-top: 1em;
+}
+form button:hover{
+    background-color: var(--color33);
+    letter-spacing: 1px;
+}
+
+@media (max-width : 1000px) {
+   form{
+    width: 80%;
+   }
+
+
+    
+}
+@media (max-width : 600px) {
+    form button{
+        min-width: 150px;
+ 
+    }
+     
+ }
+
+/* ###################################### end form */
+
+
+
+/* ######################################################## strt footer */
+footer{
+    display: flex;
+    justify-content: space-around;
+    background-color: rgb(13, 14, 14);
+    align-items: center;
+    padding: 20px;
+    border-top-left-radius: var(--borderR);
+    border-top-right-radius: var(--borderR);
+    border-top: 3px solid var(--color3);
+}
+footer span{
+    font-weight: 800;
+    font-size:2em;
+    padding: 2px;
+}
+footer strong{
+    font-weight: 700;
+    font-size: 1.4em;
+    letter-spacing: 1px;
+}
+
+footer .soial-icons{
+    margin: 0px;
+}
+
+/* ###################################### end footer */
+.btn{
+    color: var(--color3);
+    background-color: var(--color11);
+    font-size: 1.7em;
+    width: 900;
+    border-radius: 50%;
+    border: none;
+    position: fixed;
+    bottom: 5em;
+    right: 0.4em;
+    transform: rotate(270deg);
+    cursor: pointer;
+    display: none;
+}
+.btn:hover{
+   color: #42cf42;
+}
+/* ######################################## media */
+@media (max-width : 1000px) {
+    body{
+        font-size: 14px;
+    }
+
+.main{
+    display: block;
+    padding-top: 7em;
+}
+.main .images{
+    width: 100%;
+    margin: auto;
+}
+
+.main .info{
+    display: none;
+}
+
+
+}
+
+@media (max-width : 600px) {
+    body{
+        font-size: 12px;
+    }
+    .main{
+        padding-top: 10em;
+    
+    
+    }
+    .btn{
+        font-size: 1.5em;
+        bottom: 10em;
+    }
+
+
+     
+    }
+    
+
+@media (max-width : 460px) {
+    body{
+        font-size: 9px;
+    }
+    .navigation a{
+        font-size: 1.3em;
+        margin-left: 0.1em;
+        padding: 0.1em;
+
+    }
+    .main{
+        padding: 10em 6em;
+        padding-top: 20em;
+    
+    }
+   
+    
+    .btn{
+        font-size: 1.3em;
+        bottom: 10em;
+    }
+
+    .soial-icons a{
+        margin-right: 0.4em;
+       
+    }
+    .imageschange img{
+        width: 35px;
+        max-height: 35px;
+        padding: 0.2em;
+
+    }
+    
+}
